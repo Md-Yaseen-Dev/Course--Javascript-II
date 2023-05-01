@@ -47,7 +47,7 @@ let numbers = [1, 2, 3, 4, 5, 6, 7];
 
 // let numbers = 1 ;
 
-console.log(Array.isArray(numbers)); // it it is array it will return true otherwise false.
+console.log(Array.isArray(numbers)); // it will check the  array . if it is array it will return true otherwise false.
 
 
 /**------------------------split---------------------------- */
