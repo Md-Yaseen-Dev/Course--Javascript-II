@@ -24,15 +24,15 @@
 
 > &#8594; [11. Break, continue and nested loop](./js/11.%20Break%2C%20continue%20and%20nested%20loop/)
 
-<!-- > &#8594; [12. Alert,confirm and prompt]()
+> &#8594; [12. Alert,confirm and prompt](./js/12.%20Alert%2Cconfirm%20and%20prompt/)
 
-> &#8594; [13. Type conversion]()
+> &#8594; [13. Type conversion](./js/13.%20Type%20conversion/)
 
-> &#8594; [14. String manipulation]()
+> &#8594; [14. String manipulation](./js/14.%20String%20manipulation/)
 
-> &#8594; [15. Array in javascript]()
+> &#8594; [15. Array in javascript](./js/15.%20Array%20in%20javascript/)
 
-> &#8594; [16. Operation on array]()
+<!-- > &#8594; [16. Operation on array]()
 
 > &#8594; [17. Function in javascript]()
 
@@ -40,7 +40,9 @@
 
 > &#8594; [19. The arguments object]()
 
-> &#8594; [20. Return a value in function]()
+> &#8594; [20. Return a value in function]() -->
+
+<!-- > &#8594; []()
 
 > &#8594; []()
 
@@ -62,9 +64,7 @@
 
 > &#8594; []()
 
-> &#8594; []()
-
-> &#8594; []()
+> &#8594; []() -->
 
 
- -->
+
