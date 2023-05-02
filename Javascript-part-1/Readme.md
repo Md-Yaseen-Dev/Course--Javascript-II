@@ -32,15 +32,15 @@
 
 > &#8594; [15. Array in javascript](./js/15.%20Array%20in%20javascript/)
 
-<!-- > &#8594; [16. Operation on array]()
+> &#8594; [16. Operation on array](./js/16.%20Operation%20on%20array/)
 
-> &#8594; [17. Function in javascript]()
+> &#8594; [17. Function in javascript](./js/17.%20Function%20in%20javascript/)
 
-> &#8594; [18. Parmeters and Arguments]()
+> &#8594; [18. Parmeters and Arguments](./js/18.%20Parmeters%20and%20Arguments/)
 
-> &#8594; [19. The arguments object]()
+> &#8594; [19. The arguments object](./js/19.%20The%20arguments%20object/) 
 
-> &#8594; [20. Return a value in function]() -->
+<!-- > &#8594; [20. Return a value in function]() 
 
 <!-- > &#8594; []()
 
