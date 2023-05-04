@@ -31,3 +31,7 @@ var teacher2 = new Teacher("ben","stokes","24", "12");
 console.log(teacher);
 console.log(teacher1);
 console.log(teacher2);
+
+teacher1.name = function(){
+    return this.firstName + " " + this.lastName
+}
