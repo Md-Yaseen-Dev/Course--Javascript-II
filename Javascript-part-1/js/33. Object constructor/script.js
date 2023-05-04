@@ -24,5 +24,10 @@ function Teacher(firstName,lastName,age, cls){
 }  // this is known as object constructor
 
 var teacher = new Teacher("saleh","majeed","24", "12");
+var teacher1 = new Teacher("moein","khan","32", "p.g");
+var teacher2 = new Teacher("ben","stokes","24", "12");
 
-console.log(teacher)
+
+console.log(teacher);
+console.log(teacher1);
+console.log(teacher2);
