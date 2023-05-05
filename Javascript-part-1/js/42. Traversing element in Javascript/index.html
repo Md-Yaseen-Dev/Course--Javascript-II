@@ -10,6 +10,7 @@
     <h2>heading 1</h2>
 
     <ul>
+      <li>list 0</li>
       <li id="intro">list 1</li>
       <li>list 2</li>
       <li>list 3</li>
@@ -22,13 +23,11 @@
       <li>list d</li>
     </ul>
     <script>
-      //   let elem = document.getElementById("intro");
-      //   //  for selecting parent i.e ul
-      //   let prt = elem.parentElement;
-      //   // console.log(prt);
-      //   prt.innerHTML = "Hello";
-      //   // console.log(prt)
-      //   console.log(elem);
+      let elem = document.getElementById("intro");
+      //  for selecting parent i.e ul
+    //   let prt = elem.parentElement;
+   // console.log(prt)
+    //   console.log(elem);
 
       /*---------- for selecting children---------------*/
 
@@ -38,7 +37,13 @@
       console.log(node);
       console.log(node1);
       let fullNode = ele.children;
-      console.log(fullNode)
+      console.log(fullNode);
+
+      /*-----------------for siblings------------------------*/
+      let sbl = elem.previousElementSibling;
+      console.log(sbl);
+      let sbl1 = elem.nextElementSibling;
+      console.log(sbl1);
     </script>
   </body>
 </html>
