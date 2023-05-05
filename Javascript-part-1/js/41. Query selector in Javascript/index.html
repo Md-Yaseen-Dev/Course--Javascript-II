@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Most power selector i.e query selector -->
+    <!-- for selecting css we use query selector -->
+
+    <h2 class = "intro">heading 1</h2>
+    <p>paragraph 1</p>
+    <div id="div1">
+    <h2 class = "intro">heading 2</h2>
+    <p class = "intro">paragraph 2</p>
+
+    <h2>heading 3</h2>
+    <p class = "intro">paragraph 3</p>
+</head>
+<body>
+    <script>
+        let elem = document.querySelector("h2.intro");
+        elem.innerHTML = "hy";
+        console.log(elem);
+
+        // for all element we use querySelctorAll
+        let elem1= document.querySelectorAll("p.intro");
+          console.log(elem1);
+
+//    not working innerHTML without for loop
+
+for(i =0 ;  i<elem1.length; i++){
+    elem1[i].innerHTML = "helloh"
+}
+
+    </script>
+
+</body>
+</html>
