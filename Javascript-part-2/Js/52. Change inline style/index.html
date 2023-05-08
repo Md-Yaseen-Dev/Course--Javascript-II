@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change inline style</title>
+  </head>
+  <body>
+    <button id="btn" name="form1">Send</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+
+      btn.style.cssText += "background-color: red; color:white; border: 10px solid yellow";
+
+    // -------------by using set Attribue---------
+
+    // btn.setAttribute("style", "background-color: blue; color:white; border:5px solid orange");
+
+    // -------------we can change one by one
+
+    btn.style.color = "violet";
+
+    btn.style.backgroundColor ="black";
+
+    // Note :- it will update every time you change the colors using attributes
+    </script>
+  </body>
+</html>
