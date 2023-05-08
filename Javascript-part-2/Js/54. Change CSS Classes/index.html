@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change CSS classes</title>
+
+    <style>
+      .color {
+        background-color: yellow;
+        color: blue;
+      }
+      .dim {
+        border: 1px solid red;
+        padding: 100px;
+      }
+      .dark {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box" class="color">
+      <p>This is dummy text!</p>
+    </div>
+    <script>
+      let box = document.getElementById("box");
+      console.log(box.className);
+
+      // box.className += " dim";  // to add another class
+
+      /*------------class-list-----------*/
+
+      console.log(box.classList);
+
+      for (let css of box.classList) {
+        console.log(css);
+      }
+      //   ---- for adding and removing classlist----------------
+
+      box.classList.add("dark");
+      box.classList.add("dim");
+      /*----------to remove----------*/
+      box.classList.remove("dark");
+
+      /*---------- to replace--------------*/
+
+      let result = box.classList.replace("dim", "dark");
+      console.log(result);
+
+      /*---------contains-------------------*/
+
+      let result1 = box.classList.contains("dim");
+      console.log(result1);
+
+
+      /*-----------toggle-------------------*/
+      let result2 = box.classList.toggle("dark");
+      console.log(result2);
+
+    </script>
+  </body>
+</html>
