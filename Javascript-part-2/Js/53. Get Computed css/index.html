@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get computered Css</title>
+    <style>
+      #btn {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn" name="form1" style="color: blue">Send</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+      btn.style.cssText +=
+        "background: yellow; color:black; border: 3px  solid red; ";
+
+      //   what are the things that css accompained in that.
+
+      let css = getComputedStyle(btn);
+      console.log(css.color);
+
+    //   Note:- inline css override the internal style css
+
+    
+    </script>
+  </body>
+</html>
