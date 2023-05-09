@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom Events</title>
 </head>
 <body>
-    
+    DOM events are action that occur as a result of the user action or as result of state change of the elements of a DOM tree.
+
+    <Ul>Examples of HTML events:  <br></br>
+
+        <li>when a user clicks the mouse</li>
+        <li>when a web page has loaded</li>
+        <li>when an image as been loaded</li>
+        <li>when the mouse moves over an element</li>
+        <li>When an input field is changed</li>
+        <li>When an HTML form is submitted</li>
+        <li>When a user stokes a key</li>
+    </Ul>
+
+<!--for in line function we use onclick -- -->
+    <!-- <button onclick = "myfunction()">Click me!</button> -->
+
+<button id = "btn">click me !</button>
+    <script>
+        function myfunction(){
+            alert("button was clicked!")
+        }
+        // <!-- SECOND METHOD 
+ let btn = document.getElementById("btn");
+
+ btn.addEventListener('click', myfunction);
+
+ btn.addEventListener('mouseout', function(){
+    alert("hey your are in mouseout ")
+ });
+
+ btn.addEventListener("mouseover", function(){
+    console.log("you are activated in mouseover")
+ })
+ console.log(btn)
+    </script>
 </body>
 </html>
