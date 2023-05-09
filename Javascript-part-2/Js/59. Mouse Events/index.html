@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <title>Mouse events</title>
+    <style>
+      #box {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+      }
+
+      #box1{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+      }
+
+
+      #box2{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box" onclick="fun()"></div>
+<br>
+    <div id="box1" ondblclick="fun1()"></div>
+    <br>
+
+    <div id="box2" onmouseleave="fun2()"></div>
+
+
+    <script>
+      function fun() {
+        alert("ohhho click event");
+      }
+
+      // ------ondblclick
+
+      function fun1() {
+        alert("double click event");
+      }
+
+    //   ------onmousedown
+
+    function fun2(){
+        alert("mouse leave event")
+    }
+    </script>
+  </body>
+</html>
