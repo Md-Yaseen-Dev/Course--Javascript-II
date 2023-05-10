@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events on form</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" id="myinput" />
+    </form>
+    <script>
+      let x = document.getElementById("myinput");
+
+      x.addEventListener("focus", myFocusFunction);
+      x.addEventListener("blur", myBlurFunction);
+
+  
+
+
+      function myFocusFunction() {
+        x.style.background = "yellow";
+      }
+
+      function myBlurFunction() {
+
+        x.style.background = "white";
+      }
+
+    //   change input it will detect the changes are done or not.
+
+    x.addEventListener("change", function(){
+        console.log(this.value);
+
+        // alert("value is changed")
+      });
+
+    //   input will trigger the detection.
+
+
+
+    x.addEventListener("input", function(){
+        console.log(this.value);
+
+      });
+
+
+    </script>
+  </body>
+</html>
