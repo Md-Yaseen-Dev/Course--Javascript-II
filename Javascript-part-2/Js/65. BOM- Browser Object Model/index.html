@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <title>Browser object Model</title>
+  </head>
+  <body>
+    <p>The Browser Object model is used to interact with the Browser</p>
+
+    <p>The window object represent a window in browser</p>
+
+    <p>An object of window is created automatically by the browser</p>
+
+    <li>
+      All global javacript objects, functions, and variable with the var keyword
+      automatically become members of the window object.
+    </li>
+
+    <li>Global variable are properties of the window object</li>
+
+    <li>Global functions are methods of the window object</li>
+
+    <script>
+      var x = "hello";
+      console.log(window.x); // window object
+      function xyz() {
+        console.log("hi..");
+      }
+      window.xyz(); // window object ,so that we should not write window. because it will automatically runs the window.
+
+      alert("hey...");// this alert also window object.
+    </script>
+  </body>
+</html>
