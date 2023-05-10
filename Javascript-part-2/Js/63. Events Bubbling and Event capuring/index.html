@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event bubbling and event capturing</title>
+  </head>
+  <style>
+    body {
+      padding: 100px;
+      background-color: cornsilk;
+    }
+    #myDiv {
+      padding: 50px;
+      background-color: darkblue;
+    }
+  </style>
+  <body>
+    <!-- <h2>1.Event handling</h2>
+
+    <p>
+      In the event bubbling model. an event starts at the most specific element
+      and thenn flows upward toward the least specific element(the document or
+      even window)
+    </p>
+
+    <p>
+      When you click the button, the click event occurs in the following order:
+    </p>
+
+    <ul>
+      <li>button</li>
+      <li>div with the id container</li>
+      <li>body</li>
+      <li>html</li>
+      <li>document</li>
+
+    </ul>
+
+    <h2>2. Event capturing</h2>
+
+<p>In the event capturing model, an event starts at the least specific element and flows downward toward the most specific element.</p>
+
+<p>When you click the button, the click event occurs in the following order:</p>
+
+<ul>
+    <li>document</li>
+    <li>html</li>
+    <li>body</li>
+    <li>div with the id container</li>
+    <li>button</li>
+  </ul>
+
+  how to use  it 
+  <h3>click to add title</h3>
+
+  <b>addEventListener(event,function,usecapture)</b> <br></br>
+
+  <li>Note :- The default value is false, which will use the bubblign propagation, when the value is set to true, the event uses the capturing propagation</li> 
+
+<br><br> -->
+
+    <div id="myDiv">
+      <button id="btn">Click me</button>
+    </div>
+    <script>
+      let d = document.getElementById("myDiv");
+
+      let b = document.getElementById("btn");
+
+      b.addEventListener("click", btnclicked);
+      d.addEventListener("click", divclicked);
+      document.body.addEventListener("click", bodyclicked);
+
+      function btnclicked(event) {
+        console.log("button clicked...");
+
+         //   for repeating parent button we use function i.e stop propogation.
+
+         event.stopPropagation();
+      }
+
+      function divclicked() {
+        console.log("div clicked...");
+      }
+
+      function bodyclicked() {
+        console.log("body clicked...");
+      }
+   
+
+
+    </script>
+  </body>
+</html>
