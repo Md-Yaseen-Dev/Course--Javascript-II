@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location object</title>
+  </head>
+  <body>
+    <button id="btn" onclick="fun()">Redirect to google</button>
+
+    <button id="btn" onclick="fun1()">Redirect to yahoo</button>
+
+    <button id="btn" onclick="fun2()">Redirect to mdn</button>
+
+    <button id="btn" onclick="fun3()">replace to w3school</button>
+
+    <button id="btn" onclick="fun4()">reload w3school</button>
+
+
+    <script>
+      console.log(location.href); //this are properties
+      console.log(location.pathname);
+      console.log(location.protocol);
+      /*---first method to redirect to other path*/
+      function fun() {
+        window.location = "http://www.google.com";
+      }
+      /*----second method to redirect to other path*/
+
+      function fun1() {
+        location.href = "http://www.yahoo.com";
+      }
+      /*----third method to redirect to other path*/
+      function fun2() {
+        location.assign("http://developer.mozilla.org");
+      }
+
+    //   ----here the back button not work in the replace
+
+    function fun3() {
+        location.replace("http://W3schools.com");
+      }
+
+    //   ---for reload (or)----refresh---
+    function fun4() {
+        location.reload("http://W3schools.com");
+      }
+
+    </script>
+  </body>
+</html>
