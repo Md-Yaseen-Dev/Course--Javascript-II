@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background changer</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 20px 100px;
+        color: black;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+      .btn{
+        width:20px;
+        height:20px;
+        display:inline-block;
+        border-radius: 50%;
+      }
+      #white{
+background-color: yellow;
+      }
+      #aqua{
+
+background-color: aqua;
+        
+      }
+      #violet{
+        background-color: violet;
+
+      }
+
+      #skyblue{
+        background-color: black;
+
+      }
+      #color-switcher{
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class ="text">About us</h1>
+
+    <div id="color-switcher">
+      <span class = "btn" id ="white" onclick ="changeBg('yellow')"></span>
+      <span class ="btn" id ="aqua" onclick ="changeBg('#7fffd4')"></span>
+      <span class = "btn" id = "violet" onclick ="changeBg('#Cc9aff')"></span>
+      <span class = "btn" id = "skyblue"onclick ="changeBg('#000000')"></span>
+    </div> 
+
+    <img
+      src="https://media.istockphoto.com/id/492025669/photo/group-of-business-people-holding-placards-forming-about-us.jpg?b=1&s=612x612&w=0&k=20&c=iPj7Pv2UEYUMeyFaWCH7fPUI4JEK_a7OsBsxSQkidPA="
+      alt="about us"
+    />
+
+    <p class ="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione eveniet alias recusandae nemo ipsam minus ullam delectus dicta? Perferendis sed delectus est, qui cum iste illum expedita doloremque recusandae aliquam exercitationem amet dolor esse non commodi maiores mollitia. Voluptates quo labore sequi numquam officiis, libero consectetur ipsum expedita ea quam odio nemo ad. Repudiandae quas rerum aperiam consectetur natus nemo repellendus tempore eveniet optio exercitationem labore praesentium, doloribus vel ut porro illo expedita provident at. Exercitationem ipsam, ducimus nemo sint assumenda officiis architecto quaerat laboriosam animi nulla, ab odio quos, perspiciatis id enim nam autem quod laborum debitis quidem placeat! Similique, ex earum? Enim ut recusandae totam dignissimos rem saepe obcaecati aspernatur. Aperiam possimus, cum asperiores similique, eaque obcaecati voluptates dicta iure et aliquid ullam, quaerat doloremque corporis officia maxime totam vitae mollitia. Eum accusantium, veniam sed iusto dolor assumenda nisi, tenetur est quia cupiditate alias omnis ea vitae rem similique sequi cum. Quo ad ea aspernatur laborum praesentium officiis iure sunt incidunt molestias saepe mollitia veritatis corporis soluta excepturi nulla eaque consectetur, inventore, amet ut. Mollitia illo consectetur similique accusantium numquam veniam minus quos, eveniet voluptates, itaque minima accusamus. Qui quos non accusamus officia aliquam, temporibus ullam quis eius? Quaerat nemo ipsam mollitia provident ex in, doloribus minus eveniet harum autem illo commodi quam veniam velit quisquam consequuntur temporibus eaque expedita ipsum, illum ad modi obcaecati. Repudiandae sunt reprehenderit ullam suscipit amet, praesentium maxime consectetur, nostrum unde enim ipsum minima repellendus eum dolorum, reiciendis numquam rem obcaecati? Neque, non reprehenderit deserunt possimus harum similique nam dolorem veritatis eligendi illo omnis! Obcaecati, quaerat? Amet nesciunt blanditiis, animi eveniet provident exercitationem numquam obcaecati repellendus accusamus error, laboriosam tempora fugit atque quae veritatis pariatur qui sunt molestias vero laudantium ad nam. Minima, nulla voluptatem. Provident totam, omnis sed nisi molestias exercitationem? Unde quo sunt neque eius sint nihil corrupti aperiam incidunt blanditiis natus eveniet dolorem vel aliquid accusamus repellat exercitationem soluta iusto obcaecati harum quibusdam voluptatem, eos, excepturi quae. Nesciunt non ut quisquam excepturi sequi quo assumenda. Earum natus molestiae odio? Quis ratione voluptates nisi doloremque vitae aut ducimus. Adipisci magnam praesentium, non unde inventore earum enim similique amet nesciunt esse autem pariatur libero maxime ut itaque temporibus est blanditiis repellendus deserunt obcaecati. Porro adipisci fugit placeat odit dolor consequatur nam? Nostrum nemo ipsam est iure officia, inventore dolorum deleniti aliquam vero placeat. Sequi pariatur impedit facilis, quis minus in cumque possimus? Repellat culpa molestiae dolores sequi maxime qui voluptas perferendis quia ea? Nihil possimus nesciunt quidem ab itaque, alias ut, tempora aut esse ipsa recusandae dicta. Iste autem reprehenderit explicabo quasi aliquam quo rerum sit consequatur. Autem, maiores cum numquam beatae similique ducimus voluptatum nemo fugit amet tempore recusandae eos vitae voluptates enim dolorum et quasi iste natus? Sunt nam ullam sapiente asperiores aliquid natus sequi officia ipsum et amet vero, voluptatum in necessitatibus suscipit? Esse ea eveniet voluptatibus possimus laborum, numquam ipsam. Repudiandae cupiditate iusto ab hic sit, fuga repellendus accusamus magni doloribus suscipit debitis obcaecati nemo animi tempora?
+    </p>
+    <script>
+      function changeBg(color){
+        document.body.style.backgroundColor = color;
+      
+        let txt = document.getElementsByClassName("text");
+        if(color == "#000000"){
+          for(let elm of txt){
+            elm.style.color = "white"
+          }
+        }else{
+          for(let elm of txt){
+            elm.style.color = "black"
+          }
+    
+        }
+      }
+      
+
+    </script>
+  </body>
+</html>
