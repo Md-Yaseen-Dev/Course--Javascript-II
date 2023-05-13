@@ -66,7 +66,7 @@ function stopwatch() {
         if (sec < 10) {
             secstring = "0" + secstring;
         }
-        if (count < 10) { 
+        if (count < 10) {
             countstring = "0" + countstring;
         }
         document.getElementById("count").innerHTML = countstring;
